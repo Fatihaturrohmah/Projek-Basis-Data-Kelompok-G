@@ -12,3 +12,4 @@ CREATE TABLE produk (
     nama_produk VARCHAR(100) NOT NULL,
     harga DECIMAL(10,2)
 );
+haiiiii
