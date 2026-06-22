@@ -1,1 +1,222 @@
+INSERT INTO pelanggan (id_pelanggan, nama_pelanggan, email, no_telepon, password, status_akun) VALUES
+('PLG-01', 'Siti Aminah', 'sitiaminah@gmail.com', '08123456789', '$2b$12$K3j8XyZ9Wq1vN2bB4mC5dO', 'Aktif'),
+('PLG-02', 'Budi Santoso', 'budis@yahoo.com', '08139876543', 'budi_santoso2026!', 'Aktif'),
+('PLG-03', 'Dewi Lestari', 'dewi.les@gmail.com', '08571122334', 'pbkdf2_sha256$250000$dewilestari99', 'Aktif'),
+('PLG-04', 'Ahmad Fauzi', 'fauzi_ahmad@outlook.com', '08215566778', '$2b$12$7eR9wPqXyT2mN8vC1bO4zZ', 'Aktif'),
+('PLG-05', 'Rizky Hidayat', 'rizky_hid@gmail.com', '08998877665', 'RizkyHidayat_Secure99!', 'Aktif'),
+('PLG-06', 'Fitriani', 'fitri.ani@gmail.com', '08112233445', 'fitrianicantik123', 'Aktif'),
+('PLG-07', 'Hendra Wijaya', 'hendraw@gmail.com', '08523344556', '$2b$12$Z1x2Cv3bB4nM5mK6j7hG8f', 'Aktif'),
+('PLG-08', 'Andi Wijaya', 'andiw99@gmail.com', '08784455667', 'andi_wijaya_rahasia', 'Aktif'),
+('PLG-09', 'Mega Utami', 'mega_utami@gmail.com', '08129988776', 'pbkdf2_sha256$250000$megautami_09', 'Aktif'),
+('PLG-10', 'Rian Hidayat', 'rian_hid@gmail.com', '08137766554', '$2b$12$Q8w7E6r5T4t3Y2u1I0o9P8', 'Aktif'),
+('PLG-11', 'Anita Sari', 'anita.sari@gmail.com', '08564433221', 'anitasari_purwokerto', 'Aktif'),
+('PLG-12', 'Eko Prasetyo', 'ekopras@gmail.com', '08126655443', 'pbkdf2_sha256$250000$ekoprasetyo99', 'Aktif'),
+('PLG-13', 'Sri Wahyuni', 'sri.wahyuni@gmail.com', '08138899001', 'sriwahyuni_hijau1', 'Aktif'),
+('PLG-14', 'Bambang T.', 'bambangt@gmail.com', '08575544332', 'Bambang_GatSu99', 'Aktif'),
+('PLG-15', 'Indah Permata', 'indah.per@gmail.com', '08221122334', '$2b$12$A1s2D3f4F5g6H7j8K9l0_Z', 'Aktif');
 
+INSERT INTO wilayah (kode_pos, kota, provinsi) VALUES
+('40111', 'Bandung', 'Jawa Barat'),
+('60111', 'Surabaya', 'Jawa Timur'),
+('10110', 'Jakarta Pusat', 'DKI Jakarta'),
+('53122', 'Purwokerto', 'Jawa Tengah'),
+('12190', 'Jakarta Selatan', 'DKI Jakarta'),
+('55281', 'Yogyakarta', 'DI Yogyakarta'),
+('55222', 'Yogyakarta', 'DI Yogyakarta'),
+('55283', 'Sleman', 'DI Yogyakarta'),
+('20123', 'Medan', 'Sumatera Utara'),
+('65111', 'Malang', 'Jawa Timur'),
+('16122', 'Bogor', 'Jawa Barat'),
+('50132', 'Semarang', 'Jawa Tengah'),
+('17111', 'Bekasi', 'Jawa Barat'),
+('40222', 'Bandung', 'Jawa Barat'),
+('16411', 'Depok', 'Jawa Barat'),
+('12980', 'Jakarta Selatan', 'DKI Jakarta');
+
+INSERT INTO alamat (id_alamat, id_pelanggan, nama_penerima, no_hp, kode_pos, alamat_lengkap, is_utama) VALUES
+('ALM-01', 'PLG-01', 'Siti Aminah', '08123456789', '40111', 'Jl. Anggrek No. 12, Kel. Merdeka', 'Ya'),
+('ALM-02', 'PLG-02', 'Budi Santoso', '08139876543', '60111', 'Perum Gading Indah Blok C/4', 'Ya'),
+('ALM-03', 'PLG-03', 'Rumah Ibu Dewi', '08571122334', '10110', 'Gang Kelinci No. 45, RT 02/RW 05', 'Tidak'),
+('ALM-05', 'PLG-04', 'Ahmad Fauzi', '08215566778', '53122', 'Komplek dosen Unsoed No. B9', 'Ya'),
+('ALM-06', 'PLG-05', 'Kantor Rizky', '08998877665', '12190', 'Sudirman Central Business District Tbk', 'Tidak'),
+('ALM-07', 'PLG-06', 'Fitriani', '08112233445', '55281', 'Kost Putri Muslimah, Jl. Gading No.3', 'Ya'),
+('ALM-08', 'PLG-07', 'Hendra Wijaya', '08523344556', '55222', 'Jl. Pemuda No. 88, Klitren', 'Ya'),
+('ALM-09', 'PLG-08', 'Toko Buku Andi', '08784455667', '55283', 'Jl. Gejayan No. 10B, Condongcatur', 'Tidak'),
+('ALM-10', 'PLG-09', 'Mega Utami', '08129988776', '20123', 'Perumahan Bumi Asri Blok F/12', 'Ya'),
+('ALM-11', 'PLG-10', 'Rian Hidayat', '08137766554', '65111', 'Jl. Merdeka No. 17, Kel. Kidul', 'Ya'),
+('ALM-12', 'PLG-11', 'Anita Sari', '08564433221', '16122', 'Kost Orange, Gg. Sayur No. 2', 'Ya'),
+('ALM-13', 'PLG-12', 'Eko Prasetyo', '08126655443', '50132', 'Jl. Pemuda Selatan No. 14', 'Ya'),
+('ALM-14', 'PLG-13', 'Sri Wahyuni', '08138899001', '17111', 'Perum Hijau Daun Blok A1 No. 5', 'Ya'),
+('ALM-15', 'PLG-14', 'Bambang T.', '08575544332', '40222', 'Jl. Gatot Subroto No. 99', 'Ya'),
+('ALM-16', 'PLG-15', 'Indah Permata', '08221122334', '16411', 'Town House cluster Diamond No. 2', 'Ya'),
+('ALM-04', 'PLG-03', 'Kantor Dewi', '08218888999', '12980', 'Menara Imperium Lt. 12, Kuningan', 'Ya');
+
+INSERT INTO kategori (id_kategori, nama_kategori, deskripsi_kategori) VALUES
+('KAT-01', 'Fashion', 'Pakaian pria & wanita'),
+('KAT-02', 'Kuliner', 'Makanan & minuman'),
+('KAT-03', 'Kecantikan', 'Perawatan wajah & tubuh'),
+('KAT-04', 'Rumah Tangga', 'Perlengkapan rumah');
+SELECT * FROM kategori;
+
+INSERT INTO produk (id_produk, id_kategori, nama_produk, deskripsi_produk, harga_produk, stok, gambar_produk, status_produk) VALUES
+('PRD-01', 'KAT-01', 'Kemeja Flannel Pria', 'Kemeja katun kotak-kotak', 150000, 45, 'kemeja.jpg', 'Tersedia'),
+('PRD-02', 'KAT-02', 'Sambal Cumi Asin 200g', 'Sambal rumahan premium', 45000, 80, 'sambalcumi.jpg', 'Tersedia'),
+('PRD-03', 'KAT-03', 'Lip Tint Cherry', 'Pewarna bibir natural', 90000, 200, 'liptint.jpg', 'Tersedia'),
+('PRD-04', 'KAT-03', 'Serum Retinol 20ml', 'Serum anti-aging', 85000, 120, 'retinol.jpg', 'Tersedia'),
+('PRD-05', 'KAT-04', 'Sapu Lantai Rayon', 'Sapu lantai anti rontok', 40000, 50, 'sapurayon.jpg', 'Tersedia');
+SELECT * FROM PRODUK;
+
+INSERT INTO pesanan (id_pesanan, id_pelanggan, id_alamat, tanggal_pesanan, total_harga, status_pesanan) VALUES
+('ORD-001', 'PLG-01', 'ALM-01', '2026-06-10', 235000, 'Selesai'),
+('ORD-002', 'PLG-02', 'ALM-02', '2026-06-10', 90000, 'Selesai'),
+('ORD-003', 'PLG-03', 'ALM-03', '2026-06-11', 240000, 'Diproses'),
+('ORD-004', 'PLG-04', 'ALM-05', '2026-06-11', 120000, 'Menunggu'),
+('ORD-005', 'PLG-01', 'ALM-01', '2026-06-11', 45000, 'Selesai'),
+('ORD-006', 'PLG-05', 'ALM-06', '2026-06-12', 135000, 'Selesai'),
+('ORD-007', 'PLG-06', 'ALM-07', '2026-06-12', 150000, 'Dibatalkan'),
+('ORD-008', 'PLG-07', 'ALM-08', '2026-06-12', 170000, 'Selesai'),
+('ORD-009', 'PLG-08', 'ALM-09', '2026-06-12', 80000, 'Selesai'),
+('ORD-010', 'PLG-09', 'ALM-10', '2026-06-13', 180000, 'Diproses'),
+('ORD-011', 'PLG-10', 'ALM-11', '2026-06-13', 340000, 'Selesai'),
+('ORD-012', 'PLG-11', 'ALM-12', '2026-06-13', 45000, 'Selesai'),
+('ORD-013', 'PLG-12', 'ALM-13', '2026-06-14', 150000, 'Diproses'),
+('ORD-014', 'PLG-13', 'ALM-14', '2026-06-14', 170000, 'Menunggu'),
+('ORD-015', 'PLG-14', 'ALM-15', '2026-06-14', 40000, 'Selesai'),
+('ORD-016', 'PLG-15', 'ALM-16', '2026-06-14', 175000, 'Selesai'),
+('ORD-017', 'PLG-02', 'ALM-02', '2026-06-15', 150000, 'Diproses'),
+('ORD-018', 'PLG-03', 'ALM-04', '2026-06-15', 45000, 'Selesai'),
+('ORD-019', 'PLG-04', 'ALM-05', '2026-06-15', 135000, 'Diproses'),
+('ORD-020', 'PLG-10', 'ALM-11', '2026-06-15', 80000, 'Selesai');
+SELECT * FROM PESANAN;
+
+INSERT INTO detail_pesanan (id_detail_pesanan, id_pesanan, id_produk, jumlah_beli, harga_satuan, subtotal) VALUES
+('DTL-001', 'ORD-001', 'PRD-01', 1, 150000, 150000),
+('DTL-002', 'ORD-001', 'PRD-04', 1, 85000, 85000),
+('DTL-003', 'ORD-002', 'PRD-02', 2, 45000, 90000),
+('DTL-004', 'ORD-003', 'PRD-03', 1, 90000, 90000),
+('DTL-005', 'ORD-003', 'PRD-01', 1, 150000, 150000),
+('DTL-006', 'ORD-004', 'PRD-05', 3, 40000, 120000),
+('DTL-007', 'ORD-005', 'PRD-02', 1, 45000, 45000),
+('DTL-008', 'ORD-006', 'PRD-02', 3, 45000, 135000),
+('DTL-009', 'ORD-007', 'PRD-01', 1, 150000, 150000),
+('DTL-010', 'ORD-008', 'PRD-04', 2, 85000, 170000),
+('DTL-011', 'ORD-009', 'PRD-05', 2, 40000, 80000),
+('DTL-012', 'ORD-010', 'PRD-03', 2, 90000, 180000),
+('DTL-013', 'ORD-011', 'PRD-01', 1, 150000, 150000),
+('DTL-014', 'ORD-011', 'PRD-03', 2, 90000, 180000),
+('DTL-015', 'ORD-012', 'PRD-02', 1, 45000, 45000),
+('DTL-016', 'ORD-013', 'PRD-01', 1, 150000, 150000),
+('DTL-017', 'ORD-014', 'PRD-04', 2, 85000, 170000),
+('DTL-018', 'ORD-015', 'PRD-05', 1, 40000, 40000),
+('DTL-019', 'ORD-016', 'PRD-03', 1, 90000, 90000),
+('DTL-020', 'ORD-016', 'PRD-04', 1, 85000, 85000),
+('DTL-021', 'ORD-017', 'PRD-01', 1, 150000, 150000),
+('DTL-022', 'ORD-018', 'PRD-02', 1, 45000, 45000),
+('DTL-023', 'ORD-019', 'PRD-02', 3, 45000, 135000),
+('DTL-024', 'ORD-020', 'PRD-05', 2, 40000, 80000);
+SELECT * FROM DETAIL_PESANAN;
+
+INSERT INTO keranjang (id_keranjang, id_pelanggan, tanggal_dibuat) VALUES
+('CRJ-01', 'PLG-01', '2026-06-01'),
+('CRJ-02', 'PLG-02', '2026-06-05'),
+('CRJ-03', 'PLG-03', '2026-06-09'),
+('CRJ-04', 'PLG-04', '2026-06-11'),
+('CRJ-05', 'PLG-05', '2026-06-10'),
+('CRJ-06', 'PLG-06', '2026-06-12'),
+('CRJ-07', 'PLG-07', '2026-06-11'),
+('CRJ-08', 'PLG-08', '2026-06-12'),
+('CRJ-09', 'PLG-09', '2026-06-11'),
+('CRJ-10', 'PLG-10', '2026-06-12'),
+('CRJ-11', 'PLG-11', '2026-06-13'),
+('CRJ-12', 'PLG-12', '2026-06-14'),
+('CRJ-13', 'PLG-13', '2026-06-12'),
+('CRJ-14', 'PLG-14', '2026-06-14'),
+('CRJ-15', 'PLG-15', '2026-06-13');
+SELECT * FROM KERANJANG;
+
+INSERT INTO detail_keranjang (id_detail_keranjang, id_keranjang, id_produk, jumlah) VALUES
+('DCRJ-01', 'CRJ-01', 'PRD-01', 1),
+('DCRJ-02', 'CRJ-01', 'PRD-04', 1),
+('DCRJ-03', 'CRJ-02', 'PRD-02', 2),
+('DCRJ-04', 'CRJ-03', 'PRD-03', 1),
+('DCRJ-05', 'CRJ-03', 'PRD-01', 1),
+('DCRJ-06', 'CRJ-04', 'PRD-05', 3),
+('DCRJ-07', 'CRJ-01', 'PRD-02', 1),
+('DCRJ-08', 'CRJ-05', 'PRD-02', 3),
+('DCRJ-09', 'CRJ-06', 'PRD-01', 1),
+('DCRJ-10', 'CRJ-07', 'PRD-04', 2),
+('DCRJ-11', 'CRJ-08', 'PRD-05', 2),
+('DCRJ-12', 'CRJ-09', 'PRD-03', 2),
+('DCRJ-13', 'CRJ-10', 'PRD-01', 1),
+('DCRJ-14', 'CRJ-10', 'PRD-03', 2),
+('DCRJ-15', 'CRJ-11', 'PRD-02', 1),
+('DCRJ-16', 'CRJ-12', 'PRD-01', 1),
+('DCRJ-17', 'CRJ-13', 'PRD-04', 2),
+('DCRJ-18', 'CRJ-14', 'PRD-05', 1),
+('DCRJ-19', 'CRJ-15', 'PRD-03', 1),
+('DCRJ-20', 'CRJ-15', 'PRD-04', 1),
+('DCRJ-21', 'CRJ-02', 'PRD-01', 1),
+('DCRJ-22', 'CRJ-03', 'PRD-02', 1),
+('DCRJ-23', 'CRJ-04', 'PRD-02', 3),
+('DCRJ-24', 'CRJ-10', 'PRD-05', 2);
+SELECT * FROM DETAIL_KERANJANG;
+
+INSERT INTO pembayaran (id_pembayaran, id_pesanan, metode_pembayaran, tanggal_bayar, jumlah_bayar, status_pembayaran) VALUES
+('PMB-01', 'ORD-001', 'Transfer Bank', '2026-06-10', 235000, 'Lunas'),
+('PMB-02', 'ORD-002', 'E-Wallet (OVO)', '2026-06-10', 90000, 'Lunas'),
+('PMB-03', 'ORD-003', 'Transfer Bank', '2026-06-11', 240000, 'Lunas'),
+('PMB-04', 'ORD-004', 'Transfer Bank', NULL, 0, 'Menunggu'),
+('PMB-05', 'ORD-005', 'E-Wallet (Gopay)', '2026-06-11', 45000, 'Lunas'),
+('PMB-06', 'ORD-006', 'Kartu Kredit', '2026-06-12', 135000, 'Lunas'),
+('PMB-07', 'ORD-008', 'Transfer Bank', '2026-06-12', 170000, 'Lunas'),
+('PMB-08', 'ORD-009', 'E-Wallet (Gopay)', '2026-06-12', 80000, 'Lunas'),
+('PMB-09', 'ORD-010', 'E-Wallet (Dana)', '2026-06-13', 180000, 'Lunas'),
+('PMB-10', 'ORD-011', 'Transfer Bank', '2026-06-13', 340000, 'Lunas'),
+('PMB-11', 'ORD-012', 'E-Wallet (OVO)', '2026-06-13', 45000, 'Lunas'),
+('PMB-12', 'ORD-013', 'Transfer Bank', '2026-06-14', 150000, 'Lunas'),
+('PMB-13', 'ORD-014', 'Transfer Bank', NULL, 0, 'Menunggu'),
+('PMB-14', 'ORD-015', 'E-Wallet (Gopay)', '2026-06-14', 40000, 'Lunas'),
+('PMB-15', 'ORD-016', 'Kartu Kredit', '2026-06-14', 175000, 'Lunas'),
+('PMB-16', 'ORD-017', 'Transfer Bank', '2026-06-15', 150000, 'Lunas'),
+('PMB-17', 'ORD-018', 'E-Wallet (Dana)', '2026-06-15', 45000, 'Lunas'),
+('PMB-18', 'ORD-019', 'Transfer Bank', '2026-06-15', 135000, 'Lunas'),
+('PMB-19', 'ORD-020', 'E-Wallet (Gopay)', '2026-06-15', 80000, 'Lunas');
+SELECT * FROM PEMBAYARAN;
+
+INSERT INTO pengiriman (id_pengiriman, id_pesanan, kurir, nomor_resi, alamat_tujuan, tanggal_pengiriman, status_pengiriman) VALUES
+('JKT-01', 'ORD-001', 'J&T Express', 'JNT100239481', 'Jl. Anggrek No. 12, Bandung', '2026-06-10', 'Diterima'),
+('JKT-02', 'ORD-002', 'SiCepat Anteraja', 'SCP992834111', 'Perum Gading Indah Blok C/4, Surabaya', '2026-06-11', 'Diterima'),
+('JKT-03', 'ORD-003', 'JNE Express', 'JNE003928114', 'Gang Kelinci No. 45, Jakarta Pusat', '2026-06-11', 'Dikirim'),
+('JKT-04', 'ORD-005', 'J&T Express', 'JNT100239499', 'Jl. Anggrek No. 12, Bandung', '2026-06-11', 'Diterima'),
+('JKT-05', 'ORD-006', 'SiCepat Anteraja', 'SCP992834150', 'SCBD, Jakarta Selatan', '2026-06-12', 'Diterima'),
+('JKT-06', 'ORD-008', 'JNE Express', 'JNE003928155', 'Jl. Pemuda No. 88, Yogyakarta', '2026-06-12', 'Diterima'),
+('JKT-07', 'ORD-009', 'J&T Express', 'JNT100239512', 'Jl. Gejayan No. 10B, Sleman', '2026-06-12', 'Diterima'),
+('JKT-08', 'ORD-010', 'SiCepat Anteraja', 'SCP992834199', 'Perum Bumi Asri Blok F/12, Medan', '2026-06-13', 'Dikirim'),
+('JKT-09', 'ORD-011', 'J&T Express', 'JNT100239555', 'Jl. Merdeka No. 17, Malang', '2026-06-13', 'Diterima'),
+('JKT-10', 'ORD-012', 'Ninja Xpress', 'NJA882911002', 'Kost Orange, Gg. Sayur No. 2, Bogor', '2026-06-13', 'Diterima'),
+('JKT-11', 'ORD-013', 'JNE Express', 'JNE003928210', 'Jl. Pemuda Selatan No. 14, Semarang', '2026-06-14', 'Dikirim'),
+('JKT-12', 'ORD-015', 'J&T Express', 'JNT100239600', 'Jl. Gatot Subroto No. 99, Bandung', '2026-06-14', 'Diterima'),
+('JKT-13', 'ORD-016', 'SiCepat Anteraja', 'SCP992834211', 'Cluster Diamond No. 2, Depok', '2026-06-14', 'Diterima'),
+('JKT-14', 'ORD-017', 'JNE Express', 'JNE003928315', 'Perum Gading Indah Blok C/4, Surabaya', '2026-06-15', 'Dikirim'),
+('JKT-15', 'ORD-018', 'SiCepat Anteraja', 'SCP992834300', 'Menara Imperium Lt. 12, Jakarta', '2026-06-15', 'Diterima'),
+('JKT-16', 'ORD-019', 'J&T Express', 'JNT100239611', 'Komplek dosen Unsoed, Purwokerto', '2026-06-15', 'Dikirim'),
+('JKT-17', 'ORD-020', 'J&T Express', 'JNT100239699', 'Jl. Merdeka No. 17, Malang', '2026-06-15', 'Diterima');
+SELECT * FROM PENGIRIMAN;
+
+INSERT INTO review (id_review, id_pelanggan, id_produk, rating, komentar, tanggal_review) VALUES
+('RVW-01', 'PLG-01', 'PRD-01', 5, 'Kainnya adem sekali', '2026-06-11'),
+('RVW-02', 'PLG-01', 'PRD-04', 5, 'serumnya cocok', '2026-06-11'),
+('RVW-03', 'PLG-02', 'PRD-02', 4, 'Sambalnya mantap, cumi tidak alot', '2026-06-10'),
+('RVW-04', 'PLG-01', 'PRD-02', 5, 'Langganan, selalu enak makan pake ini', '2026-06-11'),
+('RVW-05', 'PLG-05', 'PRD-02', 3, 'Rasa oke tapi pengiriman agak lama', '2026-06-12'),
+('RVW-06', 'PLG-07', 'PRD-04', 4, 'Istri saya suka, kerutan berkurang katanya', '2026-06-12'),
+('RVW-07', 'PLG-08', 'PRD-05', 5, 'Sapunya kokoh, gagang mantap', '2026-06-13'),
+('RVW-08', 'PLG-10', 'PRD-01', 4, 'Kemejanya pas', '2026-06-14'),
+('RVW-09', 'PLG-10', 'PRD-03', 4, 'liptint buat kado adek', '2026-06-14'),
+('RVW-10', 'PLG-11', 'PRD-02', 5, 'Enak bangett, pedesnya nampol', '2026-06-14'),
+('RVW-11', 'PLG-14', 'PRD-05', 4, 'Berfungsi dengan baik', '2026-06-15'),
+('RVW-12', 'PLG-15', 'PRD-03', 5, 'Pengiriman cepat, packing sangat aman', '2026-06-15'),
+('RVW-13', 'PLG-15', 'PRD-04', 5, 'Pengiriman cepat, packing sangat aman', '2026-06-15'),
+('RVW-14', 'PLG-03', 'PRD-02', 4, 'Kirim ke kantor cepat sampai, sambal aman', '2026-06-16'),
+('RVW-15', 'PLG-10', 'PRD-05', 5, 'Packing tebal, barang aman berguna', '2026-06-16');
+SELECT * FROM REVIEW;
