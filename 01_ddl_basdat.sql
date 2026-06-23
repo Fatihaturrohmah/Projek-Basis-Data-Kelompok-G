@@ -136,3 +136,13 @@ CREATE TABLE review (
     FOREIGN KEY (id_pelanggan) REFERENCES pelanggan(id_pelanggan),
     FOREIGN KEY (id_produk) REFERENCES produk(id_produk)
 );
+
+-- Indeks pada kolom yang sering difilter
+CREATE INDEX idx_produk_kategori 	ON produk  (id_kategori);
+CREATE INDEX idx_pesanan_pelanggan   ON pesanan (id_pelanggan);
+CREATE INDEX idx_pesanan_status  	ON pesanan (status_pesanan);
+CREATE INDEX idx_review_produk   	ON review  (id_produk);
+CREATE INDEX idx_alamat_pelanggan	ON alamat  (id_pelanggan);
+CREATE INDEX idx_alamat_kode_pos 	ON alamat  (kode_pos);
+CREATE INDEX idx_keranjang_pelanggan ON keranjang (id_pelanggan);
+
